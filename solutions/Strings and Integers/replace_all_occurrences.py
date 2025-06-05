@@ -24,7 +24,7 @@
 
 def replace_all(mainText: str, target: str, repl: str) -> str:
     # your code here
-    return ""
+    return mainText.replace(target, repl)
 
 
 print("Example:")
