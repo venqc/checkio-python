@@ -21,7 +21,7 @@
 
 def factorial(n: int) -> int:
     # your code here
-    return 0
+    return n*factorial(n-1) if n>1 else 1
 
 
 print("Example:")
