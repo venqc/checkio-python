@@ -17,10 +17,10 @@
 
 def goes_after(word: str, first: str, second: str) -> bool:
     # your code here
-    return False
-
+    return -1 < word.find(first+second)
 
 print("Example:")
+print(goes_after("world", "l", "d"))
 print(goes_after("world", "w", "o"))
 
 # These "asserts" are used for self-checking

@@ -15,7 +15,9 @@
 
 def between_markers(text: str, start: str, end: str) -> str:
     # your code here
-    return ""
+    x = text.index(start)
+    y = text.index(end)
+    return text[x+1:y]
 
 
 print("Example:")
