@@ -15,8 +15,12 @@
 
 def beginning_zeros(a: str) -> int:
     # your code here
-    return 0
+    a_num = int(a)
+    if not a_num: # case a as all zeros
 
+        return len(a)
+
+    return len(a) - len(str(a_num))
 
 print("Example:")
 print(beginning_zeros("10"))
