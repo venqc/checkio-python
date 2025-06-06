@@ -18,6 +18,14 @@
 
 def checkio(words: str) -> bool:
     # add your code here
+    count = 0
+    for w in words.split():
+        if w.isalpha():
+            count += 1
+            if count == 3:
+                return True
+        else:
+            count = 0
     return False
 
 

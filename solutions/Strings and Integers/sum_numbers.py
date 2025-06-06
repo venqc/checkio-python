@@ -15,11 +15,15 @@
 
 def sum_numbers(text: str) -> int:
     # your code here
-    return 0
+    result = []
+    for i in text.split():
+        if i.isdigit():
+            result.append(int(i))
+    return sum(result)
 
 
 print("Example:")
-print(sum_numbers("hi"))
+print(sum_numbers("hi 3055 and 7045"))
 
 # These "asserts" are used for self-checking
 assert sum_numbers("hi") == 0

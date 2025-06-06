@@ -13,7 +13,8 @@
 
 def max_digit(value: int) -> int:
     # your code here
-    return 0
+   
+    return max(map(int, str(value)))
 
 
 print("Example:")
