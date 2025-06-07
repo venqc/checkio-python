@@ -21,7 +21,13 @@
 
 def longest_word(sentence: str) -> str:
     # your code here
-    return ""
+    res = ""
+    l = 0 
+    for word in sentence.split():
+        l1 = len(word)
+        if l1 > l: res, l = word, l1
+        
+    return res
 
 
 print("Example:")
