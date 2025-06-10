@@ -19,7 +19,9 @@
 
 def first_word(text: str) -> str:
     # your code here
-    return ""
+    text = text.replace('.', ' ').replace(',', ' ')
+    text = text.split()
+    return text[0]
 
 
 print("Example:")

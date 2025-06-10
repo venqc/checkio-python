@@ -21,7 +21,7 @@
 
 def max_of_three(a: int, b: int, c: int) -> int:
     # your code here
-    return 0
+    return max(a, b, c)
 
 
 print("Example:")
