@@ -20,8 +20,14 @@
 # END_DESC
 
 def fuzzy_string_match(str1: str, str2: str, threshold: int) -> bool:
-    # your code here
-    return False
+
+    for i in range(max(len(str1), len(str2))):
+        try:
+            if str1[i] != str2[i]: threshold -= 1
+        except IndexError:
+            threshold -= 1
+        
+    return threshold >= 0
 
 
 print("Example:")
