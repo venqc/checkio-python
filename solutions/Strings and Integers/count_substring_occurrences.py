@@ -20,10 +20,15 @@
 # END_DESC
 
 def count_occurrences(main_str: str, sub_str: str) -> int:
-    # your code here
-    return 0
 
-
+    ind = res = 0
+    main_str = main_str.lower()
+    sub_str = sub_str.lower()
+    while (ind := main_str.find(sub_str, ind)) != -1:
+        res += 1
+        ind += 1
+        
+    return res
 print("Example:")
 print(count_occurrences("hello world hello", "hello"))
 
